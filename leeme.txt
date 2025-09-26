@@ -1,0 +1,67 @@
+# =============
+# Git
+# =============
+instalar git 
+sudo apt install git
+
+git config --global user.name "Your name"
+git config --global user.email "Your_email@example.com"
+
+git init
+
+git branch -m <name>
+
+git add .
+
+git commit -m "your message"
+
+git push origin <branch_name>
+
+git pull origin <branch_name>
+
+# =============
+# Python
+# =============
+python -m venv env
+source env/bin/activate
+source env/bin/deactivate
+
+python -m pip install --upgrade pip setuptools
+pip install numpy
+pip install scipy
+pip install matplotlib
+pip install pyserial
+pip install tflite_runtime
+
+exportar los paquetes
+pip freeze > requirements.txt
+importar los paquetes
+pip install -r .requirements.txt
+mostrar paquetes
+pip list
+
+python3 ecg.py
+
+# =============
+# Pytorch
+# =============
+En el equipo con tarjeta de video nvidia
+
+1.- crear ambiente
+python -m venv env
+2.- activar ambiente
+source env/bin/activate
+3.- seguir instrucciones de la pagina oficial
+https://pytorch.org/get-started/locally/
+
+mi cuda ver es: 12.7
+para ver la info usar: nvidia-msi
+
+4.- instalar pytorch
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+
+---------
+
+lsusb .- para verificar usb conectados
+dmesg | grep ttyUSB .- para ver los puertos tty que se han asignado
+
